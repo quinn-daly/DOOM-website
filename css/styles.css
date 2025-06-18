@@ -3,5 +3,91 @@ body {
     color: white;
     font-family: sans-serif;
 }
+/* === Dark Theme Base === */
+body.dark {
+  background-color: #000;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Navigation Bar === */
+nav {
+  background-color: #111;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #F48221;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: purple;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+.hero-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #F48221;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.button {
+  background-color: #F48221;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #e46f00;
+}
+
+/* === Highlight Image === */
+.highlight-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Footer === */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
 
 
