@@ -2,10 +2,73 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Home | DOOM Ultimate</title>
+  <title>DOOM Ultimate Frisbee</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #6a0dad;
+    }
+
+    .divider {
+      height: 4px;
+      background-color: #6a0dad;
+    }
+
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .instagram-widget {
+      padding: 20px;
+      background-color: #111;
+    }
+
+    .twitter-widget {
+      padding: 20px;
+      background-color: #111;
+    }
+  </style>
 </head>
-<body class="dark">
+<body>
 
   <nav>
     <ul>
@@ -17,52 +80,31 @@
     </ul>
   </nav>
 
-  <header class="hero">
-    <img src="images/doom-logo-classic.png" alt="DOOM Logo" class="hero-logo">
-    <h1>DOOM Ultimate</h1>
-    <p>If Cornell has NO enemeies we mustn't be alive</p>
-    <a href="events.html" class="button">See Upcoming Events</a>
-  </header>
-<section class="social-feed">
-  <h2>Follow Us on Social</h2>
+  <div class="divider"></div>
 
-  <!-- Instagram Feed -->
-  <div class="social-widget">
+  <div class="section">
+    <h1>Welcome to DOOM Ultimate</h1>
+    <p>Building the future of Syracuse ultimate since 1975.</p>
+  </div>
+
+  <div class="instagram-widget">
     <!-- LightWidget WIDGET -->
     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe src="https://cdn.lightwidget.com/widgets/ec2c2d87b2715906aa2d310a3d8f4190.html"
-      scrolling="no"
-      allowtransparency="true"
-      class="lightwidget-widget"
-      style="width:100%; border:0; overflow:hidden; height:500px;">
+    <iframe src="https://cdn.lightwidget.com/widgets/ec2c2d87b2715906aa2d310a3d8f4190.html" 
+      scrolling="no" 
+      allowtransparency="true" 
+      class="lightwidget-widget" 
+      style="width:100%;border:0;overflow:hidden;">
     </iframe>
   </div>
 
-<!-- X Feed --> 
-<!-- Embedded Twitter Timeline -->
-<div class="social-widget">
-  <h3>Follow Us on X (Twitter)</h3>
-  <a class="twitter-timeline"
-     data-height="500"
-     href="https://twitter.com/cusescoobydoom?ref_src=twsrc%5Etfw">
-     Tweets by @cusescoobydoom
-  </a> 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-
-
-
-  <section class="highlight-image">
-    <img src="images/doom-crest.png" alt="Crest">
-  </section>
-
-  <footer>
-    <p style="color: #F48221;">CONTACT • doomcaptains@gmail.com</p>
-  </footer>
+  <div class="twitter-widget">
+    <a class="twitter-timeline" 
+       href="https://twitter.com/cusescoobydoom?ref_src=twsrc%5Etfw">
+       Tweets by cusescoobydoom
+    </a> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 
 </body>
 </html>
-
-
-
