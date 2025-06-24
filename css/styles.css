@@ -169,4 +169,64 @@ footer {
   height: 120px;
   object-fit: contain;
 }
+.news-section {
+  padding: 60px 20px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.news-section h2 {
+  font-size: 2rem;
+  color: #F48221;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.news-image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.news-content h3 {
+  font-size: 1.5rem;
+  color: #F48221;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.news-content .button {
+  background-color: #F48221;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.news-content .button:hover {
+  background-color: #e46f00;
+}
 
