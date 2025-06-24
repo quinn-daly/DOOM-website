@@ -1,10 +1,4 @@
 body {
-    background-color: #111;
-    color: white;
-    font-family: sans-serif;
-}
-/* === Dark Theme Base === */
-body.dark {
   background-color: #000;
   color: white;
   font-family: 'Segoe UI', sans-serif;
@@ -16,6 +10,7 @@ body.dark {
 nav {
   background-color: #111;
   padding: 15px 0;
+  text-align: center;
 }
 
 nav ul {
@@ -32,10 +27,18 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: purple;
+  color: #6a0dad;
+}
+
+/* === Divider Under Navbar === */
+.divider {
+  height: 4px;
+  background-color: #6a0dad;
 }
 
 /* === Hero Section === */
@@ -43,11 +46,6 @@ nav a:hover {
   text-align: center;
   padding: 60px 20px;
   background-color: #111;
-}
-
-.hero-logo {
-  max-width: 200px;
-  margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -58,21 +56,7 @@ nav a:hover {
 
 .hero p {
   font-size: 1.2rem;
-  color: #ddd;
-}
-
-.button {
-  background-color: #F48221;
-  color: black;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.button:hover {
-  background-color: #e46f00;
+  color: white;
 }
 
 /* === Highlight Image === */
@@ -89,6 +73,7 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
+
 /* === Social Feed Section === */
 .social-feed {
   padding: 60px 20px;
@@ -113,4 +98,17 @@ footer {
   font-style: italic;
 }
 
+/* === Instagram & Twitter Widget Styling === */
+.instagram-widget,
+.twitter-widget {
+  padding: 20px;
+  background-color: #111;
+}
+
+.instagram-widget iframe {
+  height: 400px;
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
 
