@@ -7,53 +7,47 @@ body {
 }
 
 /* === Navigation Bar === */
-/* === Sticky Transparent Header with Centered Logo === */
-/* Header/Nav */
-.navbar {
+/* === NAVBAR Updates === */
+.site-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
   z-index: 1000;
-  padding: 10px 0;
 }
 
-.navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 10px 40px;
+  background: linear-gradient(to bottom, rgba(106, 13, 173, 0.7), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(10px);
 }
 
-.nav-left,
-.nav-right {
+.navbar ul {
+  list-style: none;
   display: flex;
   gap: 30px;
-  list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-.nav-logo img {
-  height: 50px;
+  padding: 0;
 }
 
 .navbar a {
-  color: white;
+  color: #F48221;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #F48221;
+  color: #ffffff;
 }
 
-
+.nav-logo img.doom-logo {
+  height: 150px; /* Increased from ~50px to 3x */
+  width: auto;
+  display: block;
+}
 
 
 /* === Divider Under Navbar === */
