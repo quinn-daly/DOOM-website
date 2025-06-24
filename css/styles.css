@@ -7,33 +7,50 @@ body {
 }
 
 /* === Navigation Bar === */
-nav {
-  background-color: #111;
-  padding: 15px 0;
-  text-align: center;
+/* === NAVIGATION BAR WITH LOGO CENTERED === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  backdrop-filter: blur(10px);
 }
 
-nav ul {
+.navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
-nav a {
+.navbar li a {
   color: #F48221;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
-  transition: color 0.3s;
+  font-size: 1rem;
 }
 
-nav a:hover {
-  color: #6a0dad;
+.navbar li a:hover {
+  color: purple;
 }
+
+.nav-logo img {
+  height: 50px;
+}
+
+/* Keep spacing consistent */
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
 
 /* === Divider Under Navbar === */
 .divider {
