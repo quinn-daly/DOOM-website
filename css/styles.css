@@ -7,49 +7,60 @@ body {
 }
 
 /* === Navigation Bar === */
-/* === NAVIGATION BAR WITH LOGO CENTERED === */
-.navbar {
+/* === Sticky Transparent Header with Centered Logo === */
+.main-header {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent */
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
 }
 
-.navbar ul {
-  list-style: none;
+.nav-left,
+.nav-right {
   display: flex;
+  list-style: none;
   gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
-.navbar li a {
-  color: #F48221;
+.nav-left li a,
+.nav-right li a {
   text-decoration: none;
+  color: #F48221;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-.navbar li a:hover {
+.nav-left li a:hover,
+.nav-right li a:hover {
   color: purple;
 }
 
 .nav-logo img {
-  height: 50px;
+  max-height: 50px;
+  margin: 0 20px;
 }
 
-/* Keep spacing consistent */
-.nav-left, .nav-right {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-left, .nav-right {
+    justify-content: center;
+    gap: 15px;
+  }
 }
+
 
 
 /* === Divider Under Navbar === */
