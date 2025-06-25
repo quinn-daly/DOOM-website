@@ -229,4 +229,41 @@ footer {
 .news-content .button:hover {
   background-color: #e46f00;
 }
+.doom-footer {
+  background: #111;
+  color: #ccc;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #6a0dad;
+  margin-top: 40px;
+}
+
+.footer-info p {
+  margin: 6px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.land-ack {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}
+
+.footer-flags {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-flags img {
+  height: 30px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
 
