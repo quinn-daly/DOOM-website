@@ -261,9 +261,8 @@ footer {
 }
 
 .footer-flags img {
-  height: 30px;
+  height: 60px;
   width: auto;
-  filter: grayscale(100%);
   opacity: 0.8;
 }
 
