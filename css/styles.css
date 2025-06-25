@@ -263,5 +263,7 @@ footer {
 .footer-flags img {
   height: 30px;
   width: auto;
+  filter: grayscale(50%);
+  opacity: 0.8;
 }
 
