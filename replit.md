@@ -31,6 +31,12 @@ This is a static HTML website for Syracuse DOOM Ultimate Frisbee team. The site 
   - Configured static file server
   - Set up workflow for development
   - Configured deployment settings
+  - Redesigned footer with clean two-column layout
+  - Added social media integration section with:
+    - Spotify podcast player
+    - X (Twitter) timeline feed
+    - Instagram post embed
+  - Styled widgets to match DOOM branding (purple and orange theme)
 
 ## Deployment
 - Configured for Replit autoscale deployment
