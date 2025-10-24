@@ -30,18 +30,20 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
+  padding: 0 20px;
 }
 
 .nav-left,
 .nav-right {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 25px;
   margin: 0;
   padding: 0;
   flex: 1;
   transition: opacity 0.3s ease;
+  min-width: 0;
 }
 
 .nav-left {
@@ -70,6 +72,75 @@ body {
   width: auto;
   display: block;
   transition: height 0.3s ease;
+}
+
+/* Responsive Navigation */
+@media (max-width: 1400px) {
+  .nav-container {
+    max-width: 100%;
+  }
+  
+  .navbar a {
+    font-size: 0.85rem;
+  }
+  
+  .nav-left,
+  .nav-right {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar a {
+    font-size: 0.8rem;
+  }
+  
+  .nav-left,
+  .nav-right {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .nav-left,
+  .nav-right {
+    gap: 12px;
+  }
+  
+  .navbar a {
+    font-size: 0.7rem;
+  }
+  
+  .nav-logo {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-left,
+  .nav-right {
+    flex: none;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    font-size: 0.85rem;
+  }
+  
+  .nav-logo {
+    height: 80px;
+    order: -1;
+  }
 }
 
 
