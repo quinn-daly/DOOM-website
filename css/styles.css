@@ -229,41 +229,95 @@ footer {
 .news-content .button:hover {
   background-color: #e46f00;
 }
-.doom-footer {
-  background: #111;
+/* === Footer === */
+.site-footer {
+  background: linear-gradient(to bottom, #111, #0a0a0a);
   color: #ccc;
-  padding: 30px 20px;
+  border-top: 3px solid #6a0dad;
+  margin-top: 60px;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info,
+.footer-logos {
+  flex: 1;
+  min-width: 280px;
   text-align: center;
-  font-size: 0.9rem;
-  border-top: 2px solid #6a0dad;
-  margin-top: 40px;
+}
+
+.footer-info h3,
+.footer-logos h3 {
+  color: #F48221;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-info p {
-  margin: 6px 0;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-info p strong {
+  color: #F48221;
+  font-weight: 600;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.logo-grid img {
+  height: 40px;
+  width: auto;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.logo-grid img:hover {
+  opacity: 1;
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  background: #0a0a0a;
+  border-top: 1px solid #333;
+  padding: 25px 20px;
+  text-align: center;
 }
 
 .land-ack {
   font-style: italic;
-  color: #888;
-  margin-top: 10px;
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 15px;
 }
 
-.footer-flags {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.footer-flags img {
-  height: 30px;
-  width: auto;
-  filter: grayscale(50%);
-  opacity: 0.8;
+.copyright {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 10px 0 0;
 }
 
