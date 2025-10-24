@@ -7,7 +7,6 @@ body {
 }
 
 /* === Navigation Bar === */
-/* === NAVBAR Updates === */
 .site-header {
   position: fixed;
   top: 0;
@@ -17,19 +16,40 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 40px;
-  background: linear-gradient(to bottom, rgba(106, 13, 173, 0.7), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(to bottom, rgba(106, 13, 173, 0.9), rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(10px);
+  width: 100%;
+  transition: padding 0.3s ease;
 }
 
-.navbar ul {
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.nav-left,
+.nav-right {
   list-style: none;
   display: flex;
   gap: 30px;
   margin: 0;
   padding: 0;
+  flex: 1;
+  transition: opacity 0.3s ease;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
 }
 
 .navbar a {
@@ -37,16 +57,19 @@ body {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
   color: #ffffff;
 }
 
-.nav-logo img.doom-logo {
-  height: 150px; /* Increased from ~50px to 3x */
+.nav-logo {
+  height: 120px;
   width: auto;
   display: block;
+  transition: height 0.3s ease;
 }
 
 
@@ -127,48 +150,6 @@ footer {
   overflow: hidden;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(106, 13, 173, 0.5), rgba(0, 0, 0, 0));
-  backdrop-filter: blur(10px);
-  z-index: 999;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-}
-
-.nav-left,
-.nav-right {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.navbar a {
-  color: #F48221;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s;
-  text-transform: uppercase;
-}
-
-.navbar a:hover {
-  color: #a45de7;
-}
-
-.nav-logo {
-  height: 120px;
-  object-fit: contain;
-}
 .news-section {
   padding: 60px 20px;
   background-color: #111;
