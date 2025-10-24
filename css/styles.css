@@ -18,10 +18,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 30px;
   background: linear-gradient(to bottom, rgba(106, 13, 173, 0.9), rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(10px);
   width: 100%;
+  box-sizing: border-box;
   transition: padding 0.3s ease;
 }
 
@@ -30,15 +31,16 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1600px;
-  padding: 0 20px;
+  max-width: 1700px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .nav-left,
 .nav-right {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   flex: 1;
@@ -48,10 +50,12 @@ body {
 
 .nav-left {
   justify-content: flex-start;
+  padding-left: 5px;
 }
 
 .nav-right {
   justify-content: flex-end;
+  padding-right: 50px;
 }
 
 .navbar a {
@@ -59,8 +63,10 @@ body {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -68,7 +74,7 @@ body {
 }
 
 .nav-logo {
-  height: 120px;
+  height: 90px;
   width: auto;
   display: block;
   transition: height 0.3s ease;
